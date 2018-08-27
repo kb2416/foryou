@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Aniversary !!</title>
+</head>
+<body>
+<form>
+<input type="text" name="her_name" id="her_name">
+<button onclick="love_finder()">Check Who is in my heart --> </button>
+</form>
+<p id="love_message"></p>
+
+
+<script type="text/javascript">
+	function love_finder()
+	{
+	var gf="shraddha";
+	var x= document.getElementById("her_name").value;
+	var n = gf.localeCompare(x);
+	alert(n);
+		if(n==0)
+		{
+			alert("Yeah its only that roams around my mind baby !! ");
+		}
+		else
+		{
+			alert("No sorry you are not in my heart !! ");	
+		}
+	}
+</script>
+</body>
+</html>
